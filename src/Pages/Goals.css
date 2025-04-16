@@ -1,0 +1,150 @@
+.goals-page {
+    width: 100%;
+  }
+  
+  .goals-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .goals-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .goal-form-container {
+    background-color: var(--card-dark);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .goal-form-container h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .form-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+  }
+  
+  .goals-content {
+    width: 100%;
+  }
+  
+  .empty-goals {
+    text-align: center;
+    padding: 3rem 0;
+  }
+  
+  .empty-goals h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .empty-goals p {
+    margin-bottom: 2rem;
+    color: var(--text-secondary);
+  }
+  
+  .goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .goal-card {
+    background-color: var(--card-dark);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .goal-category {
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .goal-title {
+    padding: 1.25rem 1.25rem 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .goal-description {
+    padding: 0 1.25rem 1rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .goal-date {
+    padding: 0 1.25rem 1rem;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+  }
+  
+  .goal-status {
+    padding: 0 1.25rem 1rem;
+  }
+  
+  .goal-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.75rem 1.25rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    gap: 0.5rem;
+  }
+  
+  .action-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    color: var(--text-light);
+  }
+  
+  .action-btn.edit {
+    background-color: var(--primary-color);
+  }
+  
+  .action-btn.complete {
+    background-color: var(--success-color);
+  }
+  
+  .action-btn.delete {
+    background-color: var(--danger-color);
+  }
+  
+  .status-badge.not-started {
+    background-color: var(--text-secondary);
+    color: var(--card-dark);
+  }
+  
+  .status-badge.in-progress {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .status-badge.completed {
+    background-color: var(--success-color);
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .goals-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  }

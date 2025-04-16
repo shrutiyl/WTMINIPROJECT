@@ -1,0 +1,159 @@
+.community-page {
+    width: 100%;
+  }
+  
+  .community-page h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .community-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .leaderboard {
+    grid-column: span 2;
+    background-color: var(--card-dark);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .leaderboard h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+  }
+  
+  .leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .leaderboard-table th, .leaderboard-table td {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .leaderboard-table th {
+    font-weight: 600;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .leaderboard-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .challenges {
+    background-color: var(--card-dark);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .challenges h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+  }
+  
+  .challenges-list {
+    margin-bottom: 1.5rem;
+  }
+  
+  .challenge-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .challenge-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .participants {
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .description {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .btn-join {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  
+  .btn-join:hover {
+    background-color: #3a80d2;
+  }
+  
+  .tips-section {
+    background-color: var(--card-dark);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tips-section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+  }
+  
+  .tips-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .tip-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1.25rem;
+  }
+  
+  .tip-card h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    color: var(--primary-color);
+  }
+  
+  .tip-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .community-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .leaderboard {
+      grid-column: span 1;
+    }
+    
+    .leaderboard-table {
+      font-size: 0.9rem;
+    }
+    
+    .leaderboard-table th, .leaderboard-table td {
+      padding: 0.75rem 0.5rem;
+    }
+  }

@@ -1,0 +1,247 @@
+/* General form styling */
+.habit-form {
+  background-color: var(--card-dark);
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.habit-form h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.form-group input[type="color"] {
+  height: 40px;
+  padding: 0.25rem;
+}
+
+/* Custom Time Picker Styling */
+.custom-time-picker {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.time-input {
+  width: 3rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.time-input::-webkit-inner-spin-button,
+.time-input::-webkit-outer-spin-button {
+  opacity: 1;
+  height: 20px;
+}
+
+.time-separator {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-secondary);
+}
+
+.time-period {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--text-light);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Reminder Section Styling */
+.reminder-section {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+}
+
+.reminder-header {
+  margin-bottom: 1rem;
+}
+
+.reminder-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+.reminder-checkbox {
+  width: auto !important;
+  height: 1.2rem;
+  width: 1.2rem !important;
+  margin: 0;
+  cursor: pointer;
+  accent-color: var(--primary-color);
+}
+
+.reminder-options {
+  padding-left: 0.5rem;
+  border-left: 2px solid var(--primary-color);
+  margin-left: 0.3rem;
+}
+
+.reminder-frequency {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.reminder-frequency label {
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.reminder-select {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.custom-hours-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.custom-hours-input {
+  width: 3rem !important;
+  text-align: center;
+  padding: 0.4rem !important;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--text-light);
+}
+
+.custom-hours-container span {
+  color: var(--text-secondary);
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn-cancel {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cancel:hover {
+  background-color: #d32f2f;
+}
+
+.btn-create {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-create:hover {
+  background-color: #388e3c;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .form-buttons {
+    flex-direction: column-reverse;
+    gap: 0.75rem;
+  }
+  
+  .form-buttons button {
+    width: 100%;
+  }
+  
+  .habit-form h2 {
+    font-size: 1.2rem;
+  }
+  
+  .custom-time-picker {
+    flex-wrap: wrap;
+  }
+  
+  .time-input {
+    width: 2.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .reminder-frequency {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .custom-hours-container {
+    flex-wrap: wrap;
+  }
+}

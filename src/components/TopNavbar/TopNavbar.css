@@ -1,0 +1,119 @@
+.top-navbar {
+    background-color: var(--sidebar-bg);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--border-color);
+    flex-shrink: 0;
+  }
+  
+  .platform-branding {
+    display: flex;
+    align-items: center;
+  }
+  
+  .platform-logo {
+    font-size: 24px;
+    margin-right: 12px;
+  }
+  
+  .platform-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    background-color: var(--lighter-bg);
+    border-radius: 8px;
+    padding: 8px 16px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 20px;
+  }
+  
+  .search-icon {
+    color: var(--muted-text);
+    margin-right: 8px;
+  }
+  
+  .search-input {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .search-input:focus {
+    outline: none;
+  }
+  
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .action-button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 20px;
+    margin-left: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+  }
+  
+  .action-button:hover {
+    background-color: var(--button-hover);
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 20px;
+    transition: background-color 0.2s;
+  }
+  
+  .user-profile:hover {
+    background-color: var(--button-hover);
+  }
+  
+  .avatar-circle {
+    width: 32px;
+    height: 32px;
+    background-color: var(--avatar-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    font-weight: bold;
+  }
+  
+  .username {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-search {
+      display: none;
+    }
+    
+    .platform-name {
+      display: none;
+    }
+  }
